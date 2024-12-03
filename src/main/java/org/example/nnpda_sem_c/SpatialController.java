@@ -18,12 +18,12 @@ public class SpatialController {
 
     @GetMapping("/nearest-nodes-and-edges")
     public List<Edge> getNearestCitiesAndRoads(@RequestParam double latitude, @RequestParam double longitude) {
-        return spatialService.findNearestCitiesAndRoads(longitude, latitude);
+        return spatialService.findNearestNodesAndEdges(longitude, latitude);
     }
 
     @GetMapping("/nearest-nodes")
     public List<Node> getNearestCities(@RequestParam double latitude, @RequestParam double longitude) {
-        return spatialService.findNearestCities(longitude, latitude);
+        return spatialService.findNearestNodes(longitude, latitude);
     }
 
 

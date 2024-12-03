@@ -12,10 +12,8 @@ public class Edge {
     private String edgeName;
     private double edgeDistance;
 
-    private double startLatitude;
-    private double startLongitude;
-
-    private double endLatitude;
-    private double endLongitude;
+    private String nodeName;
+    private double latitude;
+    private double longitude;
 
 }
